@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
 
         <!--CARACTERES ESPECIALES-->
@@ -24,8 +25,10 @@
 
     </head>
 
+ 
     <body class="info-layout">
-        <header class="header-container">
+
+        <header class="container-fluid">
             
             <!--LOGO-->
             <div class="logo-container">
@@ -45,11 +48,81 @@
 
         </header>
 
-        <main>
+        
+        <!--MAIN-->
+        <main class="container-fluid">
+
+            <div class="formulario">    
+                
+                <div class="about-me">
+            
+
+                    <p class="presentacion"> Hola! Mi nombre es Guido Toritto y soy         diseñador 3D.
+                        Apasionado de las nuevas tecnologías y de crear proyectos relacionados con el mundo de los espacios, animaciones y objetos en 3D, desde indumentaria hasta avatares o darle vida a un personaje. Si estas interesado en participar de un proyecto conjunto o si necesitas tu 
+                        presupuesto no dudes en consultarme</p>
+        
+                    <p class="presentacion-ingles">Hello! My name is Guido Toritto and I'm a 3D designer.
+                        Passionate about new technologies and creating projects related to the world of spaces, animations and 3D objects, from clothing to avatars or giving life to a character.
+                        Feel free to contact me and I'll be replying soon.
+                    </p>
+                </div>
+                <h3>Contacto</h3>
+                <p>Escribime, en breve me pondré en contacto contigo</p><br>
+          
+          
+                  <form action="submeter-formulario.php" method="post">       
+          
+                      
+                      <p>
+                          <label for="nombre" class="colocar_nombre">Nombre
+                              <span class="obligatorio">*</span>
+                          </label>
+                          <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                      </p>
+                        
+                      <p>
+                          <label for="email" class="colocar_email">Email
+                              <span class="obligatorio">*</span>
+                          </label>
+                          <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                      </p>    
+                        
+                      <p>
+                          <label for="mensaje" class="colocar_mensaje">Mensaje
+                              <span class="obligatorio">*</span>
+                          </label>                     
+                          <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                      </p>                    
+                        
+                      <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+          
+                      <p class="aviso">
+                          <span class="obligatorio"> * </span>los campos son obligatorios.
+                      </p>          
+                      
+                  </form>
+              </div>
 
         </main>
-        
+
+
+        <!--FOOTER-->
+        <footer class="container-fluid">
+            <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</small>
+            <small>2022</small>           
+        </footer>
+
+
+        <!--BACKGROUND VIDEO-->
+        <div class="video">
+            <video muted autoplay loop>
+                <source src="../mediav/Home/background.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!--Javascript de BOOTSTRAP online-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
     </body>
-    <!--Javascript de BOOTSTRAP online-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+
 </html>
