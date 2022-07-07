@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.container-style, .footer, .header {
+.container-style, .footer, .about-me, .header {
   background-color: rgba(70, 70, 70, 0.25);
   box-shadow: 0 8px 32px 0 rgba(161, 161, 161, 0.37);
   backdrop-filter: blur(13.5px);
@@ -41,12 +41,12 @@
 }
 
 /*EXTENDS*/
-.position, .footer, .info-main, .works-main, .collabs-card, .collabs-main, .clothing-main, .about-me, .characters-hero, .clothing-hero, .titular, index-main {
+.position, .footer, .info-main, .works-main, .collabs-card, .collabs-main, .clothing-main, .about-me, .joyeria-hero, .portraits-hero, .characters-hero, .clothing-hero, .titular, .index-main {
   position: relative;
   z-index: 2;
 }
 
-.container-style, .footer, .header {
+.container-style, .footer, .about-me, .header {
   background-color: rgba(70, 70, 70, 0.25);
   box-shadow: 0 8px 32px 0 rgba(161, 161, 161, 0.37);
   backdrop-filter: blur(13.5px);
@@ -56,10 +56,8 @@
 }
 
 /*INDEX MAIN*/
-index-main {
+.index-main {
   height: 100vh;
-  display: flex;
-  justify-content: center;
   overflow: scroll;
   scroll-behavior: smooth;
   margin: 10px;
@@ -70,11 +68,12 @@ index-main {
   display: flex;
   justify-content: center;
   font-size: 2rem;
+  text-shadow: 4px 10px 12px black;
   box-shadow: 5px 7px 12px black;
   border-radius: 50px;
   margin: 10px;
   padding: 15px;
-  color: whitesmoke;
+  color: white;
 }
 
 .clothing-hero {
@@ -93,6 +92,23 @@ index-main {
   margin: 20px;
 }
 
+.portraits-hero {
+  box-shadow: 5px 7px 12px black;
+  width: 480px;
+  height: 600px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.joyeria-hero {
+  box-shadow: 5px 7px 12px black;
+  width: 480px;
+  height: 600px;
+  border-radius: 20px;
+  margin: 20px;
+  background-color: black;
+}
+
 .img-hero {
   width: 100%;
   height: 100%;
@@ -108,6 +124,21 @@ index-main {
   color: whitesmoke;
   justify-content: center;
   align-items: center;
+}
+
+.proximamente {
+  top: 160px;
+  font-size: 50px;
+  text-shadow: 4px 10px 12px black;
+  position: absolute;
+  left: 45px;
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me {
+  padding: 10px;
 }
 
 .presentacion {
@@ -167,13 +198,101 @@ index-main {
   padding: 20px;
 }
 
+/*FORMULARIO*/
+.contact_form {
+  width: 300px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
+}
+
+label {
+  display: block;
+  float: center;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+}
+
+.aviso {
+  font-size: 13px;
+  color: #0e0e0e;
+}
+
+::-webkit-input-placeholder {
+  color: #a8a8a8;
+}
+
+::-webkit-textarea-placeholder {
+  color: #a8a8a8;
+}
+
+.formulario input:focus {
+  outline: 0;
+  border: 1px solid black;
+}
+
+.formulario textarea:focus {
+  outline: 0;
+  border: 1px solid black;
+}
+
+/* redes*/
+.seguime {
+  color: white;
+  text-shadow: 4px 10px 12px black;
+}
+
 /*extends*/
-.position, .footer, index-main, .titular, .clothing-hero, .characters-hero, .about-me, .clothing-main, .collabs-main, .collabs-card, .works-main, .info-main {
+.position, .footer, .index-main, .titular, .clothing-hero, .characters-hero, .portraits-hero, .joyeria-hero, .about-me, .clothing-main, .collabs-main, .collabs-card, .works-main, .info-main {
   position: relative;
   z-index: 2;
 }
 
-.container-style, .footer, .header {
+.container-style, .footer, .header, .about-me {
   background-color: rgba(70, 70, 70, 0.25);
   box-shadow: 0 8px 32px 0 rgba(161, 161, 161, 0.37);
   border-radius: 10px;
